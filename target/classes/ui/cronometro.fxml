@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="284.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="405.0" prefWidth="600.0">
+         <children>
+            <ProgressBar fx:id="pbCronometro" layoutX="90.0" layoutY="177.0" prefHeight="18.0" prefWidth="312.0" progress="0.0" />
+            <Label fx:id="lblTiempo" layoutX="90.0" layoutY="201.0" prefHeight="52.0" prefWidth="312.0" />
+            <Button fx:id="btnIniciar" layoutX="60.0" layoutY="105.0" mnemonicParsing="false" onMouseClicked="#iniciar" prefHeight="25.0" prefWidth="75.0" text="Iniciar asc" />
+            <TextField fx:id="tfTiempoInicial" layoutX="137.0" layoutY="78.0" prefHeight="25.0" prefWidth="63.0" />
+            <Label layoutX="137.0" layoutY="52.0" prefHeight="17.0" prefWidth="69.0" text="Valor inicial" />
+            <Button fx:id="btnParar" layoutX="318.0" layoutY="130.0" mnemonicParsing="false" onMouseClicked="#parar" prefHeight="25.0" prefWidth="75.0" text="Detener" />
+            <TextField fx:id="tfTiempoFinal" layoutX="279.0" layoutY="78.0" prefHeight="25.0" prefWidth="63.0" />
+            <Label layoutX="276.0" layoutY="52.0" prefHeight="17.0" prefWidth="69.0" text="Valor final" />
+            <Button fx:id="btnPausar" layoutX="183.0" layoutY="130.0" mnemonicParsing="false" onMouseClicked="#pausar" prefHeight="25.0" prefWidth="85.0" text="Pausar" />
+            <Button fx:id="btnIniciarDesc" layoutX="60.0" layoutY="143.0" mnemonicParsing="false" onMouseClicked="#iniciarDesc" text="Iniciar desc" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
